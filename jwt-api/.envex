@@ -1,0 +1,9 @@
+JWT_SECRET=troque-por-uma-chave-grande-e-aleatoria
+JWT_REFRESH_SECRET=outra-chave-diferente-da-primeira
+PORT=3000
+FRONT_URL=http://localhost:5173
+# Validade do access token (use 30s so no video para mostrar o refresh)
+ACCESS_EXPIRES=15m
+# Admin criado pelo seed na primeira execucao
+ADMIN_EMAIL=admin@biblioteca.com
+ADMIN_PASSWORD=123456

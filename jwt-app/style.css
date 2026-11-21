@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; margin: 0; background: #f4f5f7; color: #222; }
+header { display: flex; align-items: center; gap: 16px; background: #1f3a5f; color: #fff; padding: 10px 20px; flex-wrap: wrap; }
+nav { display: flex; gap: 6px; flex: 1; flex-wrap: wrap; }
+nav button { background: transparent; color: #fff; border: 1px solid transparent; }
+nav button.active, nav button:hover { border-color: #fff; }
+main { padding: 20px; max-width: 1100px; margin: 0 auto; }
+.card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 1px 4px #0002; margin-bottom: 20px; }
+#login-screen { display: grid; place-items: center; min-height: 100vh; }
+#login-screen .card { width: 320px; display: grid; gap: 12px; }
+label { display: grid; gap: 4px; font-size: 14px; }
+input, select, button { padding: 8px; font-size: 14px; border-radius: 4px; border: 1px solid #bbb; }
+button { cursor: pointer; background: #2f6fed; color: #fff; border: none; }
+button.sec { background: #888; }
+button.danger { background: #d33; }
+form.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; align-items: end; }
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th, td { padding: 8px; border-bottom: 1px solid #ddd; text-align: left; font-size: 14px; }
+td.actions { display: flex; gap: 6px; }
+#msg { position: fixed; top: 10px; right: 10px; padding: 12px 16px; border-radius: 6px; color: #fff; z-index: 10; }
+#msg.err { background: #d33; } #msg.ok { background: #2a9d4b; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.cards .card strong { display: block; font-size: 28px; margin-top: 6px; }
+.tag { padding: 2px 8px; border-radius: 10px; font-size: 12px; color: #fff; }
+.ATIVO { background: #2f6fed; } .ATRASADO { background: #d33; } .DEVOLVIDO { background: #2a9d4b; }
+
+/* garante que o atributo hidden esconda mesmo com display definido */
+[hidden] { display: none !important; }
